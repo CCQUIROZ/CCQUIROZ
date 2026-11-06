@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Colegio Coralia Quiroz | Contacto </title>
+        <link rel="stylesheet" href="STYLE.CSS">  
+        <script src="js/sesion.js" defer></script>  
+    </head>
+
+    <body>
+         <header>
+            <a href="INDEX.HTML"> Colegio Coralia Quiroz</a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-boton" aria-label="Abrir menú">☰</label>
+            
+            <nav>
+                <ul>
+                    <li><a href="INDEX.HTML">Inicio</a></li>
+                    <li><a href="OFERTA.HTML">Oferta Academica</a></li>
+                    <li><a href="MATRICULA.HTML">Matricula y Admisión</a></li>
+                    <li><a href="CONTACTO.HTML" class="activo">Contacto</a></li>
+                    <li><a href="LOGIN.HTML" id="enlace-sesion">Iniciar Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+          <section class="encabezado-pagina">
+            <h1>Contacto</h1>
+            <p>Escríbenos o visítanos, con gusto te atendemos.</p>
+          </section>
+
+          <section class="contacto-layout">
+
+            <article class="contacto-datos">
+              <h2>Datos de contacto</h2>
+              <ul class="lista-contacto">
+                <li>
+                  <strong>Dirección</strong>
+                  <span>Colonia Los Pinos, calle principal, San Salvador</span>
+                </li>
+                <li>
+                  <strong>Teléfono</strong>
+                  <span>7777-7777</span>
+                </li>
+                <li>
+                  <strong>Correo</strong>
+                  <span>info@coraliaquiroz.edu.sv</span>
+                </li>
+                <li>
+                  <strong>Horario</strong>
+                  <span>Lunes a viernes, 7:00 a.m. a 4:00 p.m.</span>
+                </li>
+              </ul>
+            </article>
+
+      
+            <form class="formulario tarjeta-contacto" action="#" method="post">
+
+              <p class="aviso">Para enviar este formulario necesitas <a href="login.html">iniciar sesión</a>.</p>
+              <h2>Envíanos un mensaje</h2>
+
+              <div class="fila">
+                <div class="campo">
+                  <label for="c-nombre">Nombre</label>
+                  <input type="text" id="c-nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="campo">
+                  <label for="c-correo">Correo electrónico</label>
+                  <input type="email" id="c-correo" name="correo" placeholder="nombre@correo.com" required>
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="c-asunto">Asunto</label>
+                <select id="c-asunto" name="asunto" required>
+                  <option value="" disabled selected>Selecciona un asunto</option>
+                  <option>Información de admisiones</option>
+                  <option>Visita al colegio</option>
+                  <option>Consulta académica</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+
+              <div class="campo">
+                <label for="c-mensaje">Mensaje</label>
+                <textarea id="c-mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+              </div>
+
+              <button type="submit" class="boton">Enviar mensaje</button>
+            </form>
+
+          </section>
+
+          <section class="mapa">
+            <!-- Aquí va el mapa de Google (ver instrucciones abajo) -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.67612776786!2d-89.29143862544245!3d13.677447099011681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f632efc2d3c1259%3A0xdfa409542cbfc7ab!2sColegio%20Coralia%20Haydee%20Quiroz!5e0!3m2!1ses!2ssv!4v1792075528322!5m2!1ses!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </section>
+
+        </main>
+
+        <footer>
+            <p> &copy; 2026 Colegio Coralia Quiroz. Proyecto Educativo</p>
+        </footer>
+      </body>
+  </html>
